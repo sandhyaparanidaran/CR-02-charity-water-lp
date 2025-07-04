@@ -159,6 +159,32 @@ header img {
   border-radius: 8px 0 0 8px;
   display: block;
 }
+@media (max-width: 768px) {
+  .banner-bg-content {
+    flex-direction: column; /* Stack image and text */
+  }
+
+  .banner-bg-img,
+  .banner-bg-text {
+    width: 100%;
+    flex: none;
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner-bg-text {
+    padding: 20px;
+  }
+
+  .banner-bg-text h1,
+  .banner-bg-text h2 {
+    text-align: center;
+  }
+
+  .header-btn {
+    margin-left: auto; /* move button to the right */
+  }
+}
 
 
 
