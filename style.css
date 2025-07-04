@@ -151,7 +151,7 @@ header img {
   color: white;   /* make subheading white */
 }
 
-  background: none;             /* No extra background */
+{  background: none;             /* No extra background */
   display: block;
   padding: 0;
   border-radius: 0;
@@ -165,6 +165,40 @@ header img {
   height: auto;
   border-radius: 8px 0 0 8px;
   display: block;
+}
+/* Section container */
+.image-section {
+  background-color: #fff7e1;  /* Light background */
+  padding: 40px 20px;        /* Space inside the section */
+  text-align: center;        /* Center the text */
+}
+
+/* Flexbox to place images side by side */
+.image-box {
+  display: flex;             /* Place items in a row */
+  justify-content: center;  /* Center the row */
+  gap: 70px;                 /* Space between the images */
+  flex-wrap: wrap;           /* Allow wrapping on small screens */
+}
+
+/* Individual image and its text */
+.image-item {
+  flex: 1 1 32%;           /* Responsive sizing */
+  max-width: 650px;
+}
+
+/* Style the images */
+.image-item img {
+  width: 100%;              /* Make image fill its box */
+  height: auto;             /* Keep original image shape */
+  border-radius: 8px;       /* Slightly rounded corners */
+}
+
+/* Style the text under each image */
+.image-item p {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #003366;           /* Dark blue text */
 }
 
 
