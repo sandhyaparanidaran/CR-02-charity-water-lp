@@ -1,0 +1,168 @@
+/* Set a background color and default font for the page */
+body {
+  background-color: #fff7e1;
+  margin: 0;
+  padding: 0;
+  /* Use Proxima Nova, and fall back to Arial or sans-serif if not available */
+  font-family: 'Proxima Nova', Arial, sans-serif;
+}
+
+/* Center the main header text */
+h1 {
+  text-align: center;
+  color: #ffc907;
+}
+
+/* Style the subheader */
+h2 {
+  text-align: center;
+  color: #fff7e1;
+  font-weight: normal;
+}
+
+/* Style the call to action button */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ffc907;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Add a simple hover effect to the button */
+button:hover {
+  background-color: #003366;
+}
+
+/* Style for the header banner with the logo */
+header {
+  background-color: #ffc907; /* Yellow background */
+  padding: 2px 16px;         /* Add space on left and right sides */
+  text-align: left;          /* Align content to the left */
+  width: 100%;               /* Make the banner stretch across the page */
+  max-width: none;           /* Remove width limit */
+  margin: 0;                 /* Remove auto-centering */
+  border-radius: 0;          /* Remove rounded corners */
+  /* Use flexbox to line up logo and button in a row */
+  display: flex;             /* Place children in a row */
+  align-items: center;       /* Vertically center items */
+}
+
+/* Style the logo image */
+header img {
+  height: 20px;              /* Set logo height */
+  /* No extra margin needed */
+}
+
+/* Style for the call to action button in the header */
+.header-btn {
+  /* Make the button stand out in the header */
+  background-color: #003366; /* Dark blue background */
+  color: white;              /* White text */
+  border: none;              /* No border */
+  border-radius: 5px;        /* Rounded corners */
+  padding: 8px 16px;         /* Space inside the button */
+  font-size: 14px;           /* Slightly smaller text */
+  cursor: pointer;           /* Pointer cursor on hover */
+  margin-left: 1050px;         /* Space between logo and button */
+  margin-right: 0;
+  /* Align the button to the left, next to the logo */
+  display: inline-block;     /* Keep button next to logo */
+  vertical-align: middle;    /* Align with the logo vertically */
+}
+
+/* Simple hover effect for the header button */
+.header-btn:hover {
+  background-color: #ffc907; /* Yellow on hover */
+  color: #003366;            /* Dark blue text on hover */
+}
+
+/* Banner with background image for the second section */
+.banner-bg {
+  /* Set a background image. Replace 'img/banner.jpg' with your image path */
+  background-image: url("https://cdn2.dropmarkusercontent.com/52043/1949e4436567a4dced4fecfe637f6e9ae867735b91276f4a93bd5d6d3234cd84/4692_Ethiopia_2019_CG-.jpg?Expires=1751612680&Signature=Jj1lpEgR409xhhJqvzj6AyWf-6UM-R4EQhScXKvD5u8zlEKCpfp98jKCyDfalP1QPXFe5lc83KjEXY4ecPAUGya1eRJthb7J-yJediGXF5-9MBBhvf7ftd5KsudIDU05vQVlcYCkYTjjYyaz99v6mFXH8o0Ren5eYQTov07waG-vlVujlVL9fs973rxWgJ87zeYynDAS0TpKVDPFnPqC~qe4IWlVVLZwfADEJ1Jl-1Z4MF6r4DhCvu3HcALJqLnyT7RM48UmCleLBv9j3z7siMnOLsA58s-fDArqOu1Izjvmsj8uDQSeWMpRCS78qg~ej9RFZYD3woZiiHqKBBJHqg__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ");
+  background-size: cover;      /* Make the image cover the whole area */
+  background-position: left;    /* Keep image on the left */
+  display: block;                /* Remove flex so background image does not affect layout */
+  padding: 100px 0;
+}
+
+/* Container for the two columns inside the banner */
+.banner-bg-content {
+  display: flex;                /* Arrange image and text side by side */
+  width: 80%;                   /* Make the content narrower than the full banner */
+  max-width: 900px;             /* Limit the maximum width */
+  margin: 0 auto;               /* Center the content */
+  background: rgba(255,255,255,0.7); /* Light background for readability */
+  border-radius: 8px;           /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Soft shadow */
+  overflow: hidden;             /* Prevent content from spilling out */
+}
+
+/* Style for the image column */
+.banner-bg-img {
+  flex: 1;                      /* Take up half the space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;             /* No background */
+  min-width: 0;
+}
+
+/* Style for the text column */
+.banner-bg-text {
+  flex: 1;                      /* Take up half the space */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;        /* Align text to the right */
+  justify-content: center;
+  padding: 40px 24px;           /* Add space around the text */
+  min-width: 0;
+}
+
+/* Style for the call to action button inside the banner */
+.banner-bg-text .banner-btn {
+  /* Simple button style for inside the banner */
+  background-color: #ffc907;    /* Yellow background */
+  color: white;                 /* White text */
+  border: none;                 /* No border */
+  border-radius: 5px;           /* Rounded corners */
+  padding: 10px 20px;           /* Space inside the button */
+  font-size: 16px;              /* Button text size */
+  cursor: pointer;              /* Pointer cursor on hover */
+  margin-top: 20px;             /* Space above the button */
+  align-self: flex-end;         /* Align button to the right */
+}
+
+/* Hover effect for the banner button */
+.banner-bg-text .banner-btn:hover {
+  background-color: #003366;    /* Dark blue on hover */
+  color: #ffc907;               /* Yellow text on hover */
+}
+
+/* Make sure text is readable on the image background */
+.banner-bg-text h1,
+.banner-bg-text h2 {
+  color: #003366;
+  background: none;             /* No extra background */
+  display: block;
+  padding: 0;
+  border-radius: 0;
+  margin: 10px 0;
+  text-align: right;
+}
+
+/* Make the image responsive */
+.banner-bg-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 0 0 8px;
+  display: block;
+}
+
+
+
