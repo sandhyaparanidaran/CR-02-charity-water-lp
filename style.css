@@ -4,20 +4,22 @@ body {
   margin: 0;
   padding: 0;
   /* Use Proxima Nova, and fall back to Arial or sans-serif if not available */
-  font-family: 'Proxima Nova', Arial, sans-serif;
+  font-family: 'Proxima Nova', Avenir, sans-serif;
 }
 
 /* Center the main header text */
 h1 {
-  text-align: center;
+  text-align: left;
   color: #ffc907;
+  Font-size : 55px;
 }
 
 /* Style the subheader */
 h2 {
-  text-align: center;
+  text-align: left;
   color: #fff7e1;
   font-weight: normal;
+  Font-size : 20px;
 }
 
 /* Style the call to action button */
@@ -116,7 +118,7 @@ header img {
   justify-content: center;
   padding: 40px 24px;           /* Add space around the text */
   min-width: 0;
-  background: rgba(0, 0, 0, 0.6); /* 0.5 = 80% opacity */
+  background: #003366; /* 0.4 = 80% opacity */
   color: white; /* Make sure text is readable */
 }
 
@@ -130,7 +132,7 @@ header img {
   padding: 10px 20px;           /* Space inside the button */
   font-size: 16px;              /* Button text size */
   cursor: pointer;              /* Pointer cursor on hover */
-  margin-top: 20px;             /* Space above the button */
+  margin-top: 67px;             /* Space above the button */
   align-self: flex-end;         /* Align button to the right */
 }
 
@@ -141,15 +143,20 @@ header img {
 }
 
 /* Make sure text is readable on the image background */
-.banner-bg-text h1,
+.banner-bg-text h1 {
+  color: #ffc907; /* keep yellow for main heading */
+}
+
 .banner-bg-text h2 {
-  color: #ffc907;
+  color: white;   /* make subheading white */
+}
+
   background: none;             /* No extra background */
   display: block;
   padding: 0;
   border-radius: 0;
   margin: 10px 0;
-  text-align: right;
+  text-align: left;
 }
 
 /* Make the image responsive */
