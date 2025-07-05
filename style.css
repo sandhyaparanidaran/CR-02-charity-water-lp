@@ -70,7 +70,7 @@ header img {
   padding: 8px 16px;         /* Space inside the button */
   font-size: 14px;           /* Slightly smaller text */
   cursor: pointer;           /* Pointer cursor on hover */
-  margin-left: 1080px;         /* Space between logo and button */
+  margin-left: auto;         /* Space between logo and button */
   margin-right: 0;
   /* Align the button to the left, next to the logo */
   display: inline-block;     /* Keep button next to logo */
@@ -151,13 +151,7 @@ header img {
   color: white;   /* make subheading white */
 }
 
-{  background: none;             /* No extra background */
-  display: block;
-  padding: 0;
-  border-radius: 0;
-  margin: 10px 0;
-  text-align: left;
-}
+
 
 /* Make the image responsive */
 .banner-bg-img img {
@@ -200,6 +194,65 @@ header img {
   font-size: 22px;
   color: #003366;           /* Dark blue text */
 }
+/* Contact section at the bottom */
+.contact-section {
+  background-color: #003366;     /* Dark blue background */
+  color: white;                  /* White text */
+  text-align: center;            /* Center the text */
+  padding: 17px 20px;            /* Space around the content */
+  font-size: 16px;
+}
 
+/* Make links white and change on hover */
+.contact-section a {
+  color: #ffc907;                /* Yellow links */
+  text-decoration: none;
+}
 
+.contact-section a:hover {
+  text-decoration: underline;
+}
+.image-item img {
+  transition: transform 0.3s ease; /* Prepares the image to animate smoothly */
+}
+
+.image-item img:hover {
+  transform: scale(1.10);         /* Grows image to 105% of its size */
+}
+
+.image-section-title {
+  font-size: 40px;          /* Make the text larger */
+  color: #003366;           /* Dark blue text */
+  margin-bottom: 1px;      /* Space below the title */
+  text-align: center;       /* Center the text */
+  font-weight: bold;        /* Make it bold if you like */
+  font-family: 'Proxima Nova', Avenir, sans-serif; /* Use the same font as the rest of the page */
+}
+@media (max-width: 768px) {
+  .banner-bg-content {
+    flex-direction: column;
+    align-items: center; /* center items vertically */
+  }
+
+  .banner-bg-img {
+    width: 100%;
+    min-height: 200px; /* make sure there is enough height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-bg-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Add this to make sure text aligns nicely and doesn't push images away */
+  .banner-bg-text {
+    align-items: center !important;
+    padding: 20px !important;
+    text-align: center;
+  }
+}
 
